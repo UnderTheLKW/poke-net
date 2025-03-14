@@ -16,7 +16,7 @@ export function PokemonGrid({ pokemonList } : PokemonGridProps){
         <div>
             <h3 className="text-2xl py-6 text-center">Search for your Pokemon</h3>
             <div className="grid w-full max-w-sm item-center gab-1.5">
-            <lable htmlFor="PokemonName">Pokemon name: </lable>
+            <label htmlFor="PokemonName">Pokemon name: </label>
             <input
             type="text"
             value={searchText}

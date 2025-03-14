@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { PokemonGrid } from "./components/pokemon-grid";
-import { getPokemonList } from "./lib/pokemonAPI";
+import { getPokemonList } from "../lib/pokemonAPI";
 
 export default async function Home() {
 
