@@ -11,7 +11,7 @@ export function PokemonCard({name} : PokemonCardProps){
         key={name + "Card"}
         className="group rounded-lg boarder boarder-transparent m-3 px-5 py-4 transition-colors hover:border-gray-300 hover">
             <h2 className={'mb-3 text-2xl font-semibold'}>
-                {name}
+                {name.charAt(0).toUpperCase() + name.slice(1)}
             </h2>
         </Link>
 
