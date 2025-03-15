@@ -3,8 +3,8 @@ import Image from "next/image";
 import { PokemonImage } from "../components/pokemon-image";
 
 
-export default async function PokemonPage({ params } : {params : { pokemonName: string } }) {
-    const { pokemonName } = params;
+export default async function PokemonPage({ params } : {params: Promise<{ pokemonName: string }> }) {
+    const { pokemonName } = await params;
     const pokemonObject = await getPokemon(pokemonName);
 
     console.log(pokemonObject);
