@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="items-center h-screen">
+        <main className="items-center" style={{height: "100dvh"}}>
         {children}
         </main>
       </body>
