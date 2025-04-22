@@ -27,7 +27,7 @@ export function PokemonGrid({pokemonList}: PokemonGridProps) {
 
     return (
         <>
-            <div className="h-full flex flex-col">
+            <div className="h-full flex flex-col safe-padding">
                 <div
                     className="flex-grow grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 overflow-y-auto text-center bg-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     {filteredPokemonList.map((pokemon: any) => {
@@ -39,17 +39,9 @@ export function PokemonGrid({pokemonList}: PokemonGridProps) {
                         )
                     })}
                 </div>
-
-                {/*<div*/}
-                {/*    className="grid item-centerbg-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">*/}
-                {/*    <label htmlFor="PokemonName">Search</label>*/}
-                {/*    */}
-                {/*</div>*/}
-                {/* Bottom search bar */}
-                {/*<div className="absolute w-full h-[180px] bottom-0 left-0">*/}
                 <div className="w-full bg-[#072ac8] rounded-t-[16px] px-4 py-2">
-                    <div className="w-full bg-[#fdd85d] rounded-[1000px] flex p-4 mx-auto">
-                        <div className="bg-white rounded-[1000px] flex p-4">
+                    <div className="w-full bg-[#fdd85d] rounded-[1000px] flex justify-center p-4 mx-auto">
+                        <div className=" w-full justify-center bg-white rounded-[1000px] p-4">
                         <input
                             type="text"
                             value={searchText}
@@ -58,16 +50,13 @@ export function PokemonGrid({pokemonList}: PokemonGridProps) {
                             placeholder="Charizard, Pikatch, etc..."
                             onChange={(e) => setSearchText(e.target.value)}/>
                         </div>
-                        {/*<Button*/}
-                        {/*    className="w-[90px] h-[45px] bg-white rounded-[1000px] text-black [font-family:'Happy_Monkey',Helvetica] hover:bg-white/90">*/}
+                        {/*<button*/}
+                        {/*    className="justify-center w-fit  min-w-[70px] bg-white rounded-[1000px] text-black hover:bg-white/90">*/}
                         {/*    GO*/}
-                        {/*</Button>*/}
+                        {/*</button>*/}
                     </div>
                 </div>
-
-                {/* Menu button */}
                 </div>
-                {/*</div>*/}
         </>
     )
 }
