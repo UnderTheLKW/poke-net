@@ -1,5 +1,6 @@
 import {getPokemon, getPokemonEvolutions} from "@/lib/pokemonAPI";
-
+import PokemonCry from "@/app/components/pokemon-cry";
+import Link from 'next/link';
 
 export default async function PokemonPage({params}: { params: Promise<{ pokemonName: string }> }) {
     const {pokemonName} = await params;
@@ -43,14 +44,13 @@ export default async function PokemonPage({params}: { params: Promise<{ pokemonN
         </div>
             <div className="w-full bg-[#072ac8] rounded-t-[16px] px-4 py-2">
                 <div className="w-full bg-[#fdd85d] rounded-[1000px] flex justify-center gap-4 p-4 mx-auto shadow-lg">
-                    <button
-                        className="min-w-[90px] px-4 py-2 text-sm font-semibold text-black bg-white rounded-[1000px] hover:bg-white/90 transition-all duration-200 shadow-sm">
-                        Cries
-                    </button>
+                    <PokemonCry id={pokemonObject.id}>Cries</PokemonCry>
+                    <Link href="/">
                     <button
                         className="min-w-[90px] px-4 py-2 text-sm font-semibold text-black bg-white rounded-[1000px] hover:bg-white/90 transition-all duration-200 shadow-sm">
                         back
                     </button>
+                    </Link>
                 </div>
             </div>
 </>
