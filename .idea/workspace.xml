@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="filter button styled on main page">
+      <change afterPath="$PROJECT_DIR$/app/components/search-bar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/filter/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pokemonTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/typeColors.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pokemonAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pokemonAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <list id="57c0133c-386c-4f6a-afab-69120b3c7050" name="Changes by mms" comment="">
+      <change beforePath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;UnderTheLKW&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/UnderTheLKW/poke-net.git&quot;,
+    &quot;accountId&quot;: &quot;0857c618-c244-4219-ac8e-f813adbd3b35&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;UnderTheLKW&quot;,
+    &quot;repository&quot;: &quot;poke-net&quot;
+  }
+}</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/app/components/pokemon-grid.tsx">
+      <ranges>
+        <range start1="3" end1="9" start2="3" end2="5" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="11" end1="12" start2="7" end2="10" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="14" end1="15" start2="12" end2="13" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="16" end1="17" start2="14" end2="20" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="18" end1="19" start2="21" end2="26" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="20" end1="21" start2="27" end2="28" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="23" end1="24" start2="30" end2="31" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
+        <range start1="26" end1="26" start2="33" end2="36" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="33" end1="34" start2="43" end2="44" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
+        <range start1="37" end1="38" start2="47" end2="48" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
+        <range start1="42" end1="67" start2="52" end2="62" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/app/page.tsx">
+      <ranges>
+        <range start1="0" end1="2" start2="0" end2="2" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
+        <range start1="3" end1="4" start2="3" end2="14" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="5" end1="5" start2="15" end2="16" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
+        <range start1="7" end1="8" start2="18" end2="19" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2vi2YDj9XC11IenuLF4X8eKTzbk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;FilterMenue&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/soe/intellijProjects/talent-hub-teamsparency&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/soe/intellijProjects/poke-net/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="" />
+      <created>1694002260336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694002260336</updated>
+      <workItem from="1744613620260" duration="18286000" />
+      <workItem from="1744712889250" duration="3048000" />
+      <workItem from="1744779115762" duration="198000" />
+      <workItem from="1744779318904" duration="360000" />
+      <workItem from="1744779684631" duration="193000" />
+      <workItem from="1744780118715" duration="31000" />
+      <workItem from="1744780155836" duration="8602000" />
+      <workItem from="1744791971781" duration="9971000" />
+      <workItem from="1744866284942" duration="19419000" />
+      <workItem from="1745299134273" duration="21759000" />
+      <workItem from="1745383925755" duration="332000" />
+      <workItem from="1745385379304" duration="26269000" />
+      <workItem from="1745469761444" duration="15811000" />
+      <workItem from="1745559115035" duration="13802000" />
+    </task>
+    <task id="LOCAL-00001" summary="immages on startpage now here&#10;&#10;axios implemented">
+      <option name="closed" value="true" />
+      <created>1744898430300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744898430300</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pokemon page now populated with evolutions &#10;tailwind now should apreciate notch on iphone">
+      <option name="closed" value="true" />
+      <created>1745306661683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745306661683</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pokemon page now populated with evolutions &#10;tailwind now should apreciate notch on iphone">
+      <option name="closed" value="true" />
+      <created>1745313596756</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745313596756</updated>
+    </task>
+    <task id="LOCAL-00004" summary="filter button styled on main page">
+      <option name="closed" value="true" />
+      <created>1745330212317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745330212317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="immages on startpage now here&#10;&#10;axios implementiert" />
+    <MESSAGE value="immages on startpage now here&#10;&#10;axios implemented" />
+    <MESSAGE value="pokemon page now populated with evolutions &#10;tailwind now should apreciate notch on iphone" />
+    <MESSAGE value="filter button styled on main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter button styled on main page" />
+  </component>
+</project>

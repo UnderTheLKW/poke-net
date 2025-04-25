@@ -1,29 +1,39 @@
 "use client"
 import {useEffect, useState} from "react";
 import {PokemonCard} from "./pokemon-card";
-import {MaterialSymbolsMenu} from "@/app/components/svgs";
-
-interface Pokemon {
-    name: string
-    image: string
-}
+import SearchBar from "@/app/components/search-bar";
+import {Pokemon} from "@/lib/pokemonTypes";
 
 interface PokemonGridProps {
-    pokemonList: Pokemon[]
+    pokemonList: Pokemon[],
+    regionFilter: string
+    typeFilter: string
 }
 
-export function PokemonGrid({pokemonList}: PokemonGridProps) {
+export function PokemonGrid({pokemonList, regionFilter="", typeFilter=""}: PokemonGridProps) {
     const [searchText, setSearchText] = useState("");
-    const [filteredPokemonList, setFilteredPokemonList] = useState(pokemonList);
+    const [filteredPokemonList, setFilteredPokemonList] = useState<Pokemon[]>([]);
+    const updateFilteredPokemonList = () => {
+        const pokemonsInRegion = pokemonList.filter(pokemon => regionFilter == "" || pokemon.pokemon_v2_encounters.some(encounter => {
+            const regionName = encounter.pokemon_v2_locationarea.pokemon_v2_location.pokemon_v2_region.name;
+            return regionName.toLowerCase() == regionFilter.toLowerCase()
+        }))
 
-    useEffect(() => {
+        const pokemonsWithType = pokemonsInRegion.filter(pokemon => typeFilter == "" || pokemon.pokemon_v2_pokemontypes.some(pokemonType => {
+            const typeName = pokemonType.pokemon_v2_type.name
+            return typeName.toLowerCase() == typeFilter.toLowerCase()
+        }))
+
         if (searchText === "") {
-            setFilteredPokemonList(pokemonList);
+            setFilteredPokemonList(pokemonsWithType);
         } else {
             setFilteredPokemonList((prev) => prev.filter(
-                (pokemon: any) => pokemon.name.toLowerCase().includes(searchText.toLowerCase())
+                (pokemon) => pokemon.name.toLowerCase().includes(searchText.toLowerCase())
             ));
         }
+    }
+    useEffect(() => {
+        updateFilteredPokemonList()
     }, [searchText]);
 
     return (
@@ -31,40 +41,25 @@ export function PokemonGrid({pokemonList}: PokemonGridProps) {
             <div className="h-full flex flex-col safe-padding relative">
                 <div
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-center bg-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    {filteredPokemonList.map((pokemon: any) => {
+                    {filteredPokemonList.map((pokemon) => {
                         return (
                             <div key={pokemon.name}
                                  className="h-fit bg-gray-50 rounded-2xl shadow-lg m-2 hover:shadow-xl transition-shadow duration-300">
-                                <PokemonCard name={pokemon.name} image={pokemon.image}/>
+                                <PokemonCard name={pokemon.name} image={pokemon.pokemon_v2_pokemonsprites[0].sprites.other["official-artwork"].front_default ?? ""}/>
                             </div>
                         )
                     })}
                 </div>
-                <div className="bottom-0 flex flex-col items-center w-full fixed">
-                    <div className="bg-red-600 w-1/3 max-w-[200px] h-[40px] rounded-t-xl">
-                        <MaterialSymbolsMenu  className="w-full"/>
-                    </div>
-                    <div className="w-full bg-[#072ac8] rounded-t-[16px] px-4 py-2">
-
-                        <div className="w-full bg-[#fdd85d] rounded-[1000px] flex justify-center p-4 mx-auto">
-                            <div className=" w-full justify-center bg-white rounded-[1000px] p-4 text-center">
-                                <input
-                                    type="text"
-                                    value={searchText}
-                                    autoComplete="off"
-                                    id="PokemonName"
-                                    placeholder="Charizard, Pikatch, etc..."
-                                    onChange={(e) => setSearchText(e.target.value)}
-                                    className="focus:outline-none"/>
-                            </div>
-                            {/*<button*/}
-                            {/*    className="justify-center w-fit  min-w-[70px] bg-white rounded-[1000px] text-black hover:bg-white/90">*/}
-                            {/*    GO*/}
-                            {/*</button>*/}
-                        </div>
-                    </div>
-                </div>
-
+                <SearchBar>
+                    <input
+                        type="text"
+                        value={searchText}
+                        autoComplete="off"
+                        id="PokemonName"
+                        placeholder="Search: Charizard, Pikatch, etc..."
+                        onChange={(e) => setSearchText(e.target.value)}
+                        className="focus:outline-none"/>
+                </SearchBar>
             </div>
         </>
     )
