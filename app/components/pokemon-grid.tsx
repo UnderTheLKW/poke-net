@@ -10,7 +10,7 @@ interface PokemonGridProps {
     typeFilter: string
 }
 
-export function PokemonGrid({pokemonList, regionFilter="", typeFilter=""}: PokemonGridProps) {
+export function PokemonGrid({pokemonList, regionFilter = "", typeFilter = ""}: PokemonGridProps) {
     const [searchText, setSearchText] = useState("");
     const [filteredPokemonList, setFilteredPokemonList] = useState<Pokemon[]>([]);
     const updateFilteredPokemonList = () => {
@@ -37,7 +37,7 @@ export function PokemonGrid({pokemonList, regionFilter="", typeFilter=""}: Pokem
     }, [searchText]);
 
     return (
-        <>
+        <div className="pb-28">
             <div className="h-full flex flex-col safe-padding relative">
                 <div
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-center bg-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -45,22 +45,23 @@ export function PokemonGrid({pokemonList, regionFilter="", typeFilter=""}: Pokem
                         return (
                             <div key={pokemon.name}
                                  className="h-fit bg-gray-50 rounded-2xl shadow-lg m-2 hover:shadow-xl transition-shadow duration-300">
-                                <PokemonCard name={pokemon.name} image={pokemon.pokemon_v2_pokemonsprites[0].sprites.other["official-artwork"].front_default ?? ""}/>
+                                <PokemonCard name={pokemon.name}
+                                             image={pokemon.pokemon_v2_pokemonsprites[0].sprites.other["official-artwork"].front_default ?? "/placeholder.png"}/>
                             </div>
                         )
                     })}
                 </div>
-                <SearchBar>
-                    <input
-                        type="text"
-                        value={searchText}
-                        autoComplete="off"
-                        id="PokemonName"
-                        placeholder="Search: Charizard, Pikatch, etc..."
-                        onChange={(e) => setSearchText(e.target.value)}
-                        className="focus:outline-none"/>
-                </SearchBar>
             </div>
-        </>
+            <SearchBar>
+                <input
+                    type="text"
+                    value={searchText}
+                    autoComplete="off"
+                    id="PokemonName"
+                    placeholder="Search: Charizard, Pikatchu, etc..."
+                    onChange={(e) => setSearchText(e.target.value)}
+                    className="focus:outline-none w-full"/>
+            </SearchBar>
+        </div>
     )
 }

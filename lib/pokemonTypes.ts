@@ -43,7 +43,9 @@ type PokemonSprite = {
             'official-artwork': {
                 front_default: string | null
             }
+
         }
+        front_default: string | null
     }
 }
 
