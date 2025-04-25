@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="filter button styled on main page">
-      <change afterPath="$PROJECT_DIR$/app/components/search-bar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/filter/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pokemonTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/typeColors.tsx" afterDir="false" />
+    <list default="true" id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="filter section now populated">
+      <change afterPath="$PROJECT_DIR$/public/placeholder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pokemonAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pokemonAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
-    <list id="57c0133c-386c-4f6a-afab-69120b3c7050" name="Changes by mms" comment="">
-      <change beforePath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pokemonTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pokemonTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,31 +41,6 @@
     &quot;repository&quot;: &quot;poke-net&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/app/components/pokemon-grid.tsx">
-      <ranges>
-        <range start1="3" end1="9" start2="3" end2="5" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="11" end1="12" start2="7" end2="10" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="14" end1="15" start2="12" end2="13" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="16" end1="17" start2="14" end2="20" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="18" end1="19" start2="21" end2="26" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="20" end1="21" start2="27" end2="28" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="23" end1="24" start2="30" end2="31" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
-        <range start1="26" end1="26" start2="33" end2="36" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="33" end1="34" start2="43" end2="44" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
-        <range start1="37" end1="38" start2="47" end2="48" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
-        <range start1="42" end1="67" start2="52" end2="62" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/app/page.tsx">
-      <ranges>
-        <range start1="0" end1="2" start2="0" end2="2" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
-        <range start1="3" end1="4" start2="3" end2="14" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="5" end1="5" start2="15" end2="16" changelist="57c0133c-386c-4f6a-afab-69120b3c7050" />
-        <range start1="7" end1="8" start2="18" end2="19" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -149,7 +114,7 @@
       <workItem from="1745383925755" duration="332000" />
       <workItem from="1745385379304" duration="26269000" />
       <workItem from="1745469761444" duration="15811000" />
-      <workItem from="1745559115035" duration="13802000" />
+      <workItem from="1745559115035" duration="17083000" />
     </task>
     <task id="LOCAL-00001" summary="immages on startpage now here&#10;&#10;axios implemented">
       <option name="closed" value="true" />
@@ -183,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745330212317</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="filter section now populated">
+      <option name="closed" value="true" />
+      <created>1745581451928</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745581451928</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +167,7 @@
     <MESSAGE value="immages on startpage now here&#10;&#10;axios implemented" />
     <MESSAGE value="pokemon page now populated with evolutions &#10;tailwind now should apreciate notch on iphone" />
     <MESSAGE value="filter button styled on main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="filter button styled on main page" />
+    <MESSAGE value="filter section now populated" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter section now populated" />
   </component>
 </project>

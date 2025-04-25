@@ -76,6 +76,7 @@ export default async function PokemonPage({params}: { params: Promise<{ pokemonN
                 <h2 className="text-xl font-semibold mb-4">Evolution Chain</h2>
                 <div className="flex flex-wrap gap-6 items-center justify-center">
                     {evolutions.map((poke) => (
+                        <Link href={poke.name}>
                         <div key={poke.name}
                              className="bg-gray-100 rounded-xl shadow-md p-4 w-32 hover:shadow-lg transition-all text-center">
                             <img
@@ -85,6 +86,7 @@ export default async function PokemonPage({params}: { params: Promise<{ pokemonN
                             />
                             <p className="capitalize text-sm font-semibold">{poke.name}</p>
                         </div>
+                        </Link>
                     ))}
                 </div>
             </div>
