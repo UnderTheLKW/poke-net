@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="small fixes like fallback image and margins / paddings">
-      <change beforePath="$PROJECT_DIR$/app/components/pokemon-cry.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pokemon-cry.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pokemon-image.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/filter/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/filter/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
+    <list id="c4563e78-58cc-42d6-99cc-e04e2bbfd4a6" name="Changes by mms" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +57,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#8 on FilterMenue",
+    "git-widget-placeholder": "FilterMenue",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/soe/intellijProjects/talent-hub-teamsparency",
     "node.js.detected.package.eslint": "true",
@@ -113,6 +115,7 @@
       <workItem from="1745385379304" duration="26269000" />
       <workItem from="1745469761444" duration="15811000" />
       <workItem from="1745559115035" duration="17674000" />
+      <workItem from="1746519419502" duration="10033000" />
     </task>
     <task id="LOCAL-00001" summary="immages on startpage now here&#10;&#10;axios implemented">
       <option name="closed" value="true" />

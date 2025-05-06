@@ -1,13 +1,44 @@
 "use client"
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {PokemonCard} from "./pokemon-card";
 import SearchBar from "@/app/components/search-bar";
 import {Pokemon} from "@/lib/pokemonTypes";
+import {useWindowVirtualizer} from "@tanstack/react-virtual";
 
 interface PokemonGridProps {
     pokemonList: Pokemon[],
     regionFilter: string
     typeFilter: string
+}
+
+function useColumnCount() {
+    const [columns, setColumns] = useState(getColumnCount());
+
+    useEffect(() => {
+        const handleResize = () => {
+            const newCount = getColumnCount();
+            setColumns((prev) => {
+                if (prev !== newCount) return newCount;
+                return prev;
+            });
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    function getColumnCount() {
+        const width = window.innerWidth;
+
+        if (width < 640) {
+            return 1;
+        } else if (width < 1024) {
+            return 2;
+        }
+
+        return 3;
+    }
+
+    return columns;
 }
 
 export function PokemonGrid({pokemonList, regionFilter = "", typeFilter = ""}: PokemonGridProps) {
@@ -36,17 +67,53 @@ export function PokemonGrid({pokemonList, regionFilter = "", typeFilter = ""}: P
         updateFilteredPokemonList()
     }, [searchText]);
 
+    const listRef = React.useRef<HTMLDivElement | null>(null)
+    const columnCount = useColumnCount();
+
+    const rows: Pokemon[][] = [];
+    for (let i = 0; i < filteredPokemonList.length; i += columnCount) {
+        rows.push(filteredPokemonList.slice(i, i + columnCount));
+    }
+
+    const virtualizer = useWindowVirtualizer({
+        count: rows.length,
+        estimateSize: () => 160,
+        overscan: 5,
+        gap: 15,
+        scrollMargin: listRef.current?.offsetTop ?? 0,
+    })
+
+    useEffect(() => {
+        virtualizer.measure();
+    }, [columnCount]);
+
     return (
         <div className="pb-28">
-            <div className="h-full flex flex-col safe-padding relative">
-                <div
-                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-center bg-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    {filteredPokemonList.map((pokemon) => {
+            <div className="h-full flex flex-col safe-padding relative m-2" ref={listRef}>
+                <div style={{height: `${virtualizer.getTotalSize()}px`}}
+                     className="relative w-full text-center">
+                    {virtualizer.getVirtualItems().map((row) => {
+                        const pokemons = rows[row.index];
+
                         return (
-                            <div key={pokemon.name}
-                                 className="h-fit bg-gray-50 rounded-2xl shadow-lg m-2 hover:shadow-xl transition-shadow duration-300">
-                                <PokemonCard name={pokemon.name}
-                                             image={pokemon.pokemon_v2_pokemonsprites[0].sprites.other["official-artwork"].front_default ?? "/placeholder.png"}/>
+                            <div key={row.key}
+                                 ref={virtualizer.measureElement}
+                                 className="absolute top-0 left-0 w-full grid gap-4 px-4"
+                                 style={{
+                                     transform: `translateY(${row.start}px)`,
+                                     gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))`,
+                                 }}>
+                                {
+                                    pokemons.map(pokemon => {
+                                        return (
+                                            <div
+                                                className="rounded-2xl bg-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                                <PokemonCard name={pokemon.name}
+                                                             image={pokemon.pokemon_v2_pokemonsprites[0].sprites.other["official-artwork"].front_default ?? "/placeholder.png"}/>
+                                            </div>
+                                        )
+                                    })
+                                }
                             </div>
                         )
                     })}
