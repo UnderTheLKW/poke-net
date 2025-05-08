@@ -3,7 +3,6 @@ import SearchBar from "@/app/components/search-bar";
 import Link from "next/link";
 import {loadPokemonList} from "@/lib/pokemonAPI";
 
-
 export default async function FilterPage() {
     const pokemonList = await loadPokemonList();
 
@@ -20,13 +19,18 @@ export default async function FilterPage() {
 
     return (
         <>
-            <div className="bg-gray-300 min-h-screen flex flex-col">
-                <div className="p-4 space-y-6">
+            <div className="bg-gray-300 min-h-screen flex justify-center">
+                <div className="flex flex-col w-full max-w-[800px] p-4 pb-32 gap-4">
+                    <Link href="/compare/">
+                        <button className="w-full text-white bg-[#6e45ff] rounded-[1000px] px-4 py-4">
+                            Compare Pokemon's
+                        </button>
+                    </Link>
                     <div className="bg-white rounded-xl p-4">
                         <div className="flex justify-center mb-4">
                             <span className="bg-gray-200 px-4 py-1 rounded-full text-sm">Region</span>
                         </div>
-                        <div className=" justify-center gap-2 flex flex-wrap ">
+                        <div className=" justify-center gap-2 flex flex-wrap">
                             {uniqueRegions.map(region => (
                                 <Link key={region} href={`/?region=${region}`}>
                                     <button

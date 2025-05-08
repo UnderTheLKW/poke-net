@@ -27,6 +27,10 @@ function useColumnCount() {
     }, []);
 
     function getColumnCount() {
+        if (typeof window === 'undefined') {
+            return 3;
+        }
+
         const width = window.innerWidth;
 
         if (width < 640) {
@@ -104,9 +108,10 @@ export function PokemonGrid({pokemonList, regionFilter = "", typeFilter = ""}: P
                                      gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))`,
                                  }}>
                                 {
-                                    pokemons.map(pokemon => {
+                                    pokemons.map((pokemon, index) => {
                                         return (
                                             <div
+                                                key={`${row.key}-${index}`}
                                                 className="rounded-2xl bg-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
                                                 <PokemonCard name={pokemon.name}
                                                              image={pokemon.pokemon_v2_pokemonsprites[0].sprites.other["official-artwork"].front_default ?? "/placeholder.png"}/>

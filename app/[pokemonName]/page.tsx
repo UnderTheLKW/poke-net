@@ -7,7 +7,6 @@ export default async function PokemonPage({params}: { params: Promise<{ pokemonN
     const {pokemonName} = await params;
     const pokemonObject = await getPokemon(pokemonName);
     const evolutions = await getPokemonEvolutions(pokemonName);
-    console.log("Types:", pokemonObject.types);
 
     return (
         <>
@@ -29,12 +28,11 @@ export default async function PokemonPage({params}: { params: Promise<{ pokemonN
                             <h2 className="text-lg font-semibold mb-2">Type{pokemonObject.types.length > 1 ? "s" : ""}</h2>
                             <div className="flex flex-wrap justify-center gap-2">
                                 {pokemonObject.types.map((typeObj: any, index: number) => (
-
                                     <span
                                         key={`${typeObj.type.name}-${index}`}
                                         className={`px-3 py-1 rounded-full text-sm text-white capitalize ${typeColors[typeObj.type.name] || "bg-gray-400"}`}>
-                                    {typeObj.type.name}
-                                </span>
+                                        {typeObj.type.name}
+                                    </span>
                                 ))}
                             </div>
                         </div>
@@ -58,8 +56,8 @@ export default async function PokemonPage({params}: { params: Promise<{ pokemonN
                             <span
                                 key={index}
                                 className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm capitalize">
-                            {ability.ability.name}
-                        </span>
+                                {ability.ability.name}
+                            </span>
                         ))}
                     </div>
                 </div>
