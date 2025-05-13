@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="virtualization impolemented to not load all pokemons and the relative pictures at once">
-      <change afterPath="$PROJECT_DIR$/app/compare/[pokemonCompare1]/[pokemonCompare2]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/compare/[pokemonCompare1]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/compare/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pokemon-compare.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/filter/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/filter/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pokemonAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pokemonAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pokemonTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pokemonTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <list id="2904cf2e-dd94-47a8-b465-a75475502520" name="Changes by mms" comment="">
       <change beforePath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pokemon-grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/svgs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/svgs.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,20 @@
     &quot;repository&quot;: &quot;poke-net&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/app/[pokemonName]/page.tsx">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="4" end1="4" start2="4" end2="5" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="7" end1="8" start2="8" end2="11" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="10" end1="10" start2="13" end2="17" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="13" end1="34" start2="20" end2="41" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="35" end1="59" start2="42" end2="67" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
+        <range start1="60" end1="71" start2="68" end2="79" changelist="2904cf2e-dd94-47a8-b465-a75475502520" />
+        <range start1="72" end1="90" start2="80" end2="98" changelist="2904cf2e-dd94-47a8-b465-a75475502520" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -58,23 +73,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;FilterMenue&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/soe/intellijProjects/talent-hub-teamsparency&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/soe/intellijProjects/poke-net/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "FilterMenue",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/soe/intellijProjects/talent-hub-teamsparency",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "ts.external.directory.path": "/home/soe/intellijProjects/poke-net/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/compare/[pokemonCompare1]/[pokemonCompare2]" />
@@ -127,7 +142,8 @@
       <workItem from="1745559115035" duration="17674000" />
       <workItem from="1746519419502" duration="11761000" />
       <workItem from="1746599824210" duration="16146000" />
-      <workItem from="1746683314443" duration="873000" />
+      <workItem from="1746683314443" duration="10406000" />
+      <workItem from="1747111722339" duration="19701000" />
     </task>
     <task id="LOCAL-00001" summary="immages on startpage now here&#10;&#10;axios implemented">
       <option name="closed" value="true" />
@@ -185,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746535651837</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="virtualization impolemented to not load all pokemons and the relative pictures at once">
+      <option name="closed" value="true" />
+      <created>1746684636416</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746684636416</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

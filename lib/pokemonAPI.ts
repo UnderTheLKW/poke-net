@@ -39,6 +39,8 @@ export async function loadPokemonList() {
   pokemon_v2_pokemon {
     id
     name
+    height
+    weight
     pokemon_v2_pokemonspecy {
       evolves_from_species_id
     }
@@ -61,6 +63,17 @@ export async function loadPokemonList() {
             name
           }
         }
+      }
+    }
+    pokemon_v2_pokemonstats {
+      pokemon_v2_stat {
+        name
+      }
+      base_stat
+    }
+    pokemon_v2_pokemonabilities {
+      pokemon_v2_ability {
+        name
       }
     }
   }
