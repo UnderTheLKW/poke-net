@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="virtualization impolemented to not load all pokemons and the relative pictures at once">
+    <list default="true" id="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" name="Changes" comment="Chart in pokemon detail view implemented and documentation in readme.md started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pokemonAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pokemonAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pokemonTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pokemonTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
-    <list id="2904cf2e-dd94-47a8-b465-a75475502520" name="Changes by mms" comment="">
-      <change beforePath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[pokemonName]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/svgs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/svgs.tsx" afterDir="false" />
-    </list>
+    <list id="2904cf2e-dd94-47a8-b465-a75475502520" name="Changes by mms" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,20 +41,6 @@
     &quot;repository&quot;: &quot;poke-net&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/app/[pokemonName]/page.tsx">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="4" end1="4" start2="4" end2="5" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="7" end1="8" start2="8" end2="11" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="10" end1="10" start2="13" end2="17" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="13" end1="34" start2="20" end2="41" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="35" end1="59" start2="42" end2="67" changelist="88e8df91-2da9-4de9-be0a-11bf7f22a8dd" />
-        <range start1="60" end1="71" start2="68" end2="79" changelist="2904cf2e-dd94-47a8-b465-a75475502520" />
-        <range start1="72" end1="90" start2="80" end2="98" changelist="2904cf2e-dd94-47a8-b465-a75475502520" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -113,8 +93,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -143,7 +123,8 @@
       <workItem from="1746519419502" duration="11761000" />
       <workItem from="1746599824210" duration="16146000" />
       <workItem from="1746683314443" duration="10406000" />
-      <workItem from="1747111722339" duration="19701000" />
+      <workItem from="1747111722339" duration="20455000" />
+      <workItem from="1747199301589" duration="1689000" />
     </task>
     <task id="LOCAL-00001" summary="immages on startpage now here&#10;&#10;axios implemented">
       <option name="closed" value="true" />
@@ -209,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746684636416</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Chart in pokemon detail view implemented and documentation in readme.md started">
+      <option name="closed" value="true" />
+      <created>1747141129883</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747141129884</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +212,7 @@
     <MESSAGE value="filter section now populated" />
     <MESSAGE value="small fixes like fallback image and margins / paddings" />
     <MESSAGE value="virtualization impolemented to not load all pokemons and the relative pictures at once" />
-    <option name="LAST_COMMIT_MESSAGE" value="virtualization impolemented to not load all pokemons and the relative pictures at once" />
+    <MESSAGE value="Chart in pokemon detail view implemented and documentation in readme.md started" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chart in pokemon detail view implemented and documentation in readme.md started" />
   </component>
 </project>
