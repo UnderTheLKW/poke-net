@@ -22,6 +22,7 @@ This frontend challenge was created by **M.Lengl** and **M.Stühmer** to develop
 - **Recharts** – Data visualization
 - **Vercel** – Deployment platform
 - **GitHub** – Version control and collaboration
+- **Recharts** - Chart
 
 ---
 
@@ -30,8 +31,8 @@ This frontend challenge was created by **M.Lengl** and **M.Stühmer** to develop
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pokedex-frontend.git
-cd pokedex-frontend
+git clone https://github.com/UnderTheLKW/poke-net.git
+cd poke-net
 ```
 
 ### 2. Install dependencies
@@ -192,6 +193,18 @@ This page dynamically compares two Pokémon based on the URL using Next.js App R
 
 ---
 
+## 📊 `PokemonOverallChart` Component
+
+The `PokemonOverallChart` component renders a **line chart** that visualizes how a given Pokémon's stat (like HP, Attack, or Speed) compares to all other Pokémon. It uses `recharts` to show the distribution of stat values and highlights the selected Pokémon’s value.
+
+---
+
+## 📈 `PokemonStat` Component
+
+The `PokemonStat` component displays a single Pokémon stat (e.g., HP, Attack, Speed) and reveals a comparison chart when clicked. It allows users to understand how the selected Pokémon compares to others in the same stat category.
+
+---
+
 ## 🔍 Pokémon Detail Page
 
 This route displays full details about a single Pokémon, including its image, types, stats, abilities, measurements, chart and evolution chain. It also features audio playback of the Pokémon's cry.
@@ -206,6 +219,33 @@ By clicking on the arrow down opens a chart with a view of all Pokémons stat an
 
 ---
 
+## 🌐 Vercel
+
+This project is deployed using **[Vercel](https://vercel.com/)** — a fast, developer-friendly platform for hosting modern web applications with built-in support for **Next.js**, serverless functions, and automatic deployments from GitHub.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### 📸 Screenshots
+
+Overview of the project on Vercel
+
+![Vercel](./public/screenshots/vercel-main.png)
+
+Some Pipeline runs after merging on main
+
+![Vercel-Pipeline](./public/screenshots/vercel-pipeline.png)
+
+---
+
+## 🧠 Future Features
+
+1. Show strengths/weaknesses vs other types (e.g., Fire > Grass).
+2. Mark Pokémon as favorites.
+3. Let users "mark as caught"
+4. Dark Mode Toggle
+5. Translate the UI and Pokémon species names into multiple languages
+
+---
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -215,9 +255,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
 
